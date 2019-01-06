@@ -1,71 +1,93 @@
-Freshman21
-==========
+# Jekyll Template - Mediumish by WowThemes.net
 
-Freshman21 is a Jekyll blog theme, base on theme [Freshman](http://github.com/yulijia/freshman). 
+[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip) &nbsp; | &nbsp; [Buy me a coffe](https://www.buymeacoffee.com/sal)
 
-A tribute to WordPress Theme Twenty-Twelve and Twenty-eleven.
+![mediumish](assets/images/mediumish-jekyll-template.png)
 
-Enjoy.
+### Features
 
+- Built for Jekyll
+- Compatible with Github pages
+- Featured Posts
+- Index Pagination
+- Post Share
+- Post Categories
+- Prev/Next Link
+- Category Archives (this is not yet compatible with github pages though)
+- Jumbotron Categories
+- Integrations:
+    - Disqus Comments
+    - Google Analaytics
+    - Mailchimp Integration
+- Design Features:
+    - Bootstrap v4.x
+    - Font Awesome
+    - Masonry
+- Layouts:
+    - Default
+    - Post
+    - Page
+    - Archive
+    
+### Using Mediumish
 
-![Screen](http://i.imgur.com/oSp7kacl.png)
-
-### Version 2.1 update 2016.06.06
-
-- master branch: the simplest template, original version with
-	* Open Graph META Tags
-	* Microdata(schema.org)
-
-- gh-pages branch: master branch with 
-
-	* [google analytics js template](https://github.com/yulijia/freshman21/blob/gh-pages/_includes/google_analytics.js)
-        * [BackToTop js script](https://github.com/yulijia/freshman21/tree/gh-pages/js)
-        * <q>readmore</q> module
-        * [keyboard shortcuts for pagination](http://yulijia.net/freshman21/news/2016/05/24/new-features.html)
-	* font awesome icon
-	* [Google search](https://github.com/yulijia/freshman21/blob/gh-pages/_includes/google_search.js)
-
-Clone master branch: 
-
-` git clone https://github.com/yulijia/freshman21.git -b master --single-branch`
-
-Clone gh-pages branch: 
-
-`git clone https://github.com/yulijia/freshman21.git -b gh-pages --single-branch`
-
-
-### A Summary of Features
-
-- Provide single column and two columns layout
-- Powerful configure file
-- Comments by Disqus
-- Support LaTeX (by MathJax)
-- Syntax highlighting
-- Multiple Languages support 
-    * English
-    * Chinese
-    * Japanese (Contributed by [kokeiro001](https://github.com/kokeiro001))
-    * Polish (Contributed by [Derson5](https://github.com/Derson5))
-    * Korean (Contributed by [Clifford Choi](https://github.com/ulgoon))
-    * Russian (Contributed by [Anton Alekseev](https://github.com/alexeyev))
-    * Turkish (Contributed by [Muhammet Kara](https://github.com/mrkara))
-    * Indonesian (Contributed by [Samsul Ma'arif](https://github.com/samsulmaarif))
-
-### How to install this theme?
+- Open `_config.yml`. If your site is in root, for `baseurl`, make sure this is set to `baseurl: ''`
+Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
+- Mediumish requires 2 plugins: 
+    - `$ gem install jekyll-paginate`
+    - `$ gem install jekyll-archives`.
+- Edit the menu and footer copyrights in `default.html`
+- Start by adding your .md files in `_posts`. Mediumish already has a few as an example. 
+- YAML front matter
+    - featured post - `featured:true`
+    - exclude featured post from "All stories" loop to avoid duplicated posts - `hidden:true`
+    - post image - `image: assets/images/mypic.jpg`
+    - page comments - `comments:true`
+    - meta description (optional) - `description: "this is my meta description"`
+    
+**YAML Post Example**:
 
 ```
-# please make sure you have already installed git tools and ruby tools(gem)
-$ gem install sass
-$ gem install jekyll
-$ git clone https://github.com/yulijia/freshman21.git
-$ mv freshman21/ yourblogname.github.io/
-
+---
+layout: post
+title:  "We all wait for summer"
+author: john
+categories: [ Jekyll, tutorial ]
+image: assets/images/5.jpg
+featured: true
+---
 ```
 
-### Demo
+`comments: false` - disable comments in posts
 
-Single column, please see [my own blog](http://yulijia.net/en/)
+`image: "https://www.myexternal.com/image.jpg"`  - set external featured image
+    
+**YAML Page Example**:
 
-Two columns, please see the [theme website](http://yulijia.net/freshman21/)
+```
+---
+layout: page
+title: Mediumish Template for Jekyll
+comments: true
+---
+```
 
+### Copyright
 
+Copyright (C) 2018 WowThemes.net.
+
+**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. 
+
+<a href="https://www.buymeacoffee.com/sal" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
+### Contribute
+
+- [Clone the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll).
+- Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
+- Open a pull request on GitHub and describe the feature or fix.
+
+Thank you so much for your contribution!
+
+-----------------
+
+[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip)
