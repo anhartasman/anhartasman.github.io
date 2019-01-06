@@ -6,6 +6,7 @@ categories: articles
 tags: [My Git, JSON, Web, Admin]
 image: images/caisjsonexplain1.png
 comments: true
+author: anhartasman
 ---
 
 Bismillah.
