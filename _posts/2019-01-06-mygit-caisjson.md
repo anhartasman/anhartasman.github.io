@@ -1,9 +1,10 @@
 ---
 layout: post
 title: My Git CAIS JSON
-excerpt: "My open source software, CAIS JSON"
+excerpt: "Alhamdulilah, i just finished an open source tool that insyaAllah can help developers to create admin web in seconds, the tool is called CAIS(Create Admin In Seconds)."
 categories: articles
 tags: [My Git, JSON, Web, Admin]
+image: images/caisjsonexplain1.png
 comments: true
 ---
 
