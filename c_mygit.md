@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My Git
+title: Mygit
 permalink: /mygit/
 ---
 [CAIS JSON](https://github.com/anhartasman/caisjson)
