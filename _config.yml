@@ -28,6 +28,7 @@ locales:
     en:
       Aboutme: "About Me"
       Archives: "Archives"
+      Mygit: "My Git"
       Blogroll: "Blogroll"
       Categories: "Categories"
       Copyright_Notice: "Copyright Notice"
