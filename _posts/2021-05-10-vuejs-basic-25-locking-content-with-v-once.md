@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Vue JS Basic 24: Event Modifier"
+title:  "Vue JS Basic 25: Locking content with v-once"
 author: anhartasman
 categories: [ vuejs, tutorial, snippet ]
 image: assets/images/16.jpg
 ---
-Belajar event modifier
+Belajar v-once
 
 ## app.js
 
@@ -68,6 +68,7 @@ xt-decoration: underline;
       <h2>Events in Action</h2>
       <button v-on:click="add">Add</button>
       <button v-on:click="reduce">Remove</button>
+      <p v-once>Started Counter: {{ counter }}</p>
       <p>Result: {{ counter }}</p>
       <input type="text"  v-on:input="setName($event,'Tasman')" v-on:keyUp.enter="confirmInput">
       <p>Your Name: {{ confirmedName }}</p>
@@ -78,6 +79,7 @@ xt-decoration: underline;
     </section>
   </body>
 </html>
+
 
 ```
 
