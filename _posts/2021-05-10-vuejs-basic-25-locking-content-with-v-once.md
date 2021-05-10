@@ -3,7 +3,7 @@ layout: post
 title:  "Vue JS Basic 25: Locking content with v-once"
 author: anhartasman
 categories: [ vuejs, tutorial, snippet ]
-image: assets/images/16.jpg
+image: assets/images/snippetVueJS.png
 ---
 Belajar v-once
 
@@ -45,7 +45,7 @@ xt-decoration: underline;
 
 #### index.html
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>

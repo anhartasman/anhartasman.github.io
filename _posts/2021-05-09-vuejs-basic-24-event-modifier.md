@@ -3,7 +3,7 @@ layout: post
 title:  "Vue JS Basic 24: Event Modifier"
 author: anhartasman
 categories: [ vuejs, tutorial, snippet ]
-image: assets/images/16.jpg
+image: assets/images/snippetVueJS.png
 ---
 Belajar event modifier
 
@@ -45,7 +45,7 @@ xt-decoration: underline;
 
 #### index.html
 
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
   <head>
