@@ -45,41 +45,7 @@ xt-decoration: underline;
 
 #### index.html
 
-```
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue Basics</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/vue@next" defer></script>
-    <script src="app.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>Vue Events</h1>
-    </header>
-    <section id="events">
-      <h2>Events in Action</h2>
-      <button v-on:click="add">Add</button>
-      <button v-on:click="reduce">Remove</button>
-      <p>Result: {{ counter }}</p>
-      <input type="text"  v-on:input="setName($event,'Tasman')" v-on:keyUp.enter="confirmInput">
-      <p>Your Name: {{ confirmedName }}</p>
-      <form v-on:submit.prevent="submitForm">
-        <input type="text" name="" id="">
-        <button>Sign Up</button>
-      </form>
-    </section>
-  </body>
-</html>
-
-```
+<script src="https://gist.github.com/anhartasman/ba41162f877fe007014cce511b6d9926.js"></script>
 
 #### styles.css
 
