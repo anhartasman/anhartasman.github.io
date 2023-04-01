@@ -1,5 +1,5 @@
 title: Anhar Tasman
-subtitle: A Programmer and his will to survive
+subtitle: Just a man and his will to survive
 description: >- # this means to ignore newlines until "baseurl:"
   learn and share
 
@@ -16,86 +16,127 @@ urls:
       url: /blog
     - text: Gallery
       url: /gallery
-    - text: Shop
-      url : /shop
+    # - text: Shop
+    #   url : /shop
     - text: Contact
       url : /contact
 
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: authors/anhartasman.png
 author: Anhar Tasman
 author_bio: Hi, my name is Anhar Tasman. I built this site using devlopr-jekyll :D
 author_email: "tasmananhar@gmail.com"
 author_location: Indonesia
-author_website_url: "https://sujaykundu.com"
-typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+author_website_url:
+typewrite-text: everyday above the ground is a blessing
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: ATA Corp
+              company_logo: work/atacorp.jpeg
+              company_url: https://grass.atacorp.co
+              designation: Programmer
+              description: Worked on mobile and web applications
               visibility: true
 
 # Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
+              - college_logo: education/gunadarma.jpg
+                college_name: Gunadarma Univercity
+                college_url: https://www.gunadarma.ac.id/
                 college_degree: CS Engineer
                 description: Bachelor of Technology
                 visibility: true
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: portfolio/bkp/images/app_icon_black_bg.png
+                project_title: BKP Mobile
+                project_info: Android
+                project_description: A Platform built for farmers and buyers
+                project_url: https://play.google.com/store/apps/details?id=com.bkp.pastani
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
+              - project_thumbnail: portfolio/jagodompet/images/app_icon_black_bg.png
+                project_title: Jago Dompet
+                project_info: Android
+                project_description: Application for your expense history
+                project_url: https://play.google.com/store/apps/details?id=com.gepreksoft.jagodompet
+                visibility: true
+              - project_thumbnail: portfolio/pikpakMobile/app_icon_black_bg.png
+                project_title: Pikpak Mobile
+                project_info: Android
+                project_description: Ecommerce Application
+                project_url: https://play.google.com/store/apps/details?id=com.alterindonesia.pikpak
+                visibility: true
+              - project_thumbnail: portfolio/klinops/app_icon_black_bg.png
+                project_title: Klinops
+                project_info: Android
+                project_description: Clinic Application
+                project_url: https://play.google.com/store/apps/details?id=com.klinops.ops
+                visibility: true
+
+# Certificates
+author_certificate_details:
+              - certificate_thumbnail: certificates/AnharSertifikatlombamembuatgame.jpg
+                certificate_title: KOMPRES 2015/2016
+                certificate_publisher: University Of Gunadarma
+                certificate_date: 7 Jan 2016
+                certificate_number: 
+                visibility: true
+              - certificate_thumbnail: certificates/AnharSertifikatDatabaseFundamental.png
+                certificate_title: Microsoft Database Fundamental
+                certificate_publisher: Microsoft
+                certificate_date: 30 Jun 2015
+                certificate_number: F365-7994
+                visibility: true
+              - certificate_thumbnail: certificates/AnharSertifikatHTML5.jpg
+                certificate_title: Building Mobile Web With HTML 5
+                certificate_publisher: University Of Gunadarma
+                certificate_date: 13 Nov 2012
+                certificate_number: 
+                visibility: true
+              - certificate_thumbnail: certificates/AnharSertifikatUbuntu.jpg
+                certificate_title: Ubuntu Training
+                certificate_publisher: Sekolah Tinggi Ilmu Komputer Cipta Karya Informatika
+                certificate_date: 25 Feb 2012
+                certificate_number: 1552/CKI/C/II/2012
+                visibility: true
+              - certificate_thumbnail: certificates/AnharSertifikatKompetensiKeahlian.jpg
+                certificate_title: CERTIFICATE OF COMPETENCY
+                certificate_publisher: PT. Bukaka Teknik Utama TbkPT. Bukaka Teknik Utama Tbk 
+                certificate_date: 10 Mar 2011
+                certificate_number: 022/BTU/SERT-UK/III/2011
                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  sujaykundu777
-facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
-instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+twitter_username: Anhar_Tasman
+github_username:  anhartasman
+facebook_username: anhar.tasman
+linkedin_username: anhar-tasman-660ab156
+behance_username:
+instagram_username: anhartasman
+medium_username:
+telegram_username:
+dribbble_username:
+flickr_username:
 
 #for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
 
-# disqus_shortname: sujay-kundu
-hyvor_talk_website_id: 476
+disqus_shortname: anhargithub
+# hyvor_talk_website_id: 476
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+wakatime_username: anhartasman
 
 # mailchimp embedded form url (newsletter):
 mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
 
 # contact form - (choose formspress or getform)
 # getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-formspree_email: johndoe@gmail.com
+formspree_email: anhar_tasman@yahoo.com
 
 # releases - widget can be (sidebar, modal or embed)
 olvy_organization: devlopr
@@ -110,6 +151,7 @@ permalink: pretty
 show_author_work_experiences: true
 show_author_education_details: true
 show_author_project_details: true
+show_author_certificate_details: true
 
 # pagination of posts
 paginate: 4

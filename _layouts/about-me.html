@@ -184,6 +184,31 @@ layout: default
       </div>
       {% endif %} {% endfor %}
     </div>
+    {% endif %} {% if site.show_author_certificate_details == true %}
+    <div id="author_certificates" class="card">
+      <h1 class="card-title">Certificates</h1>
+      <br />
+      {% for certificate in site.author_certificate_details %} {% if certificate.visibility
+      == true %}
+      <div class="row" id="certificate-card">
+        <div class="col-md-6">
+          <img
+            src="{{site.url}}{{site.baseurl}}/assets/img/{{certificate.certificate_thumbnail}}"
+            class="certificate-img"
+          />
+        </div>
+        <div class="col-md-4 center">
+          <h4 class="experience-title">{{ certificate.certificate_title }}</h4>
+          <h6 class="experience-info">{{ certificate.certificate_publisher}}</h6>
+          <p class="experience-desc">{{ certificate.certificate_date }}</p>
+          <p class="certificate-link"> 
+            {{ certificate.certificate_number}}
+          </p>
+        </div>
+      </div>
+      <br />
+      {% endif %} {% endfor %}
+    </div>
     {% endif %}
   </div>
 </div>

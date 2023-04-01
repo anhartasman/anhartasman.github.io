@@ -47,3 +47,21 @@ xplor4r:
       - title: "facebook"
         url: "https://www.facebook.com/sujay.kundu2"
 
+anhartasman:
+   name: Anhar Tasman
+   username: anhartasman
+   site: 
+   avatar: anhartasman.png
+   bio: "Full Stack Developer"
+   email: tasmananhar@gmail.com
+   social:
+      - title: "github"
+        url: "https://github.com/anhartasman"
+      - title: "facebook"
+        url: "https://www.facebook.com/anhar.tasman"
+      - title: "instagram"
+        url: "https://www.instagram.com/anhartasman"
+      - title: "linkedin"
+        url: "https://www.linkedin.com/in/anhar-tasman-660ab156"
+
+
