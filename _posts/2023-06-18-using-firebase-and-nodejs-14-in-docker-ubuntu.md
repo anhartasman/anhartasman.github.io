@@ -3,10 +3,10 @@ layout: post
 title:  "Using Firebase And Node JS 14 In Docker Ubuntu"
 summary: "Docker Tutorial"
 author: anhartasman
-date: '2023-06-18 02:00:23 +0530'
+date: '2023-06-18 12:00:23 +0530'
 categories: [ nodejs,firebase,docker,ubuntu ]
 thumbnail: /assets/img/posts/docker_black_logo.png
-keywords: flutter,ecommerce,shopping
+keywords: firebase,docker,nodejs,node
 permalink: /blog/using-firebase-and-nodejs-14-in-docker-ubuntu/
 usemathjax: true
 portfolio: true 
