@@ -53,29 +53,41 @@ author_education_details:
 
 # Projects
 author_project_details:
-              - project_thumbnail: portfolio/bkp/images/app_icon_black_bg.png
-                project_title: BKP Mobile
+              - project_thumbnail: portfolio/bkp/images/feat_image_bkp_supplier.png
+                project_title: PASTANI Supplier
                 project_info: Android
-                project_description: A Platform built for farmers and buyers
+                project_description: Platform for farmers to sell their products
+                project_url: https://play.google.com/store/apps/details?id=com.bkp.sislog_supplier
+                visibility: true
+              - project_thumbnail: portfolio/bkp/images/feat_image_bkp_grosir.jpg
+                project_title: PASTANI Grosir
+                project_info: Android
+                project_description: To buy products from farmers
                 project_url: https://play.google.com/store/apps/details?id=com.bkp.pastani
                 visibility: true
-              - project_thumbnail: portfolio/jagodompet/images/app_icon_black_bg.png
+              - project_thumbnail: portfolio/jagodompet/images/feat_image_jagodompet.png
                 project_title: Jago Dompet
                 project_info: Android
                 project_description: Application for your expense history
                 project_url: https://play.google.com/store/apps/details?id=com.gepreksoft.jagodompet
                 visibility: true
-              - project_thumbnail: portfolio/pikpakMobile/app_icon_black_bg.png
+              - project_thumbnail: portfolio/pikpakMobile/feat_image_pikpak.jpg
                 project_title: Pikpak Mobile
                 project_info: Android
                 project_description: Ecommerce Application
                 project_url: https://play.google.com/store/apps/details?id=com.alterindonesia.pikpak
                 visibility: true
-              - project_thumbnail: portfolio/klinops/app_icon_black_bg.png
+              - project_thumbnail: portfolio/klinops/feat_image_klinops.png
                 project_title: Klinops
                 project_info: Android
-                project_description: Clinic Application
+                project_description: Clinic Application For Clinic Owner
                 project_url: https://play.google.com/store/apps/details?id=com.klinops.ops
+                visibility: true
+              - project_thumbnail: portfolio/klinops/feat_image_terops.png
+                project_title: Klinops Personal
+                project_info: Android
+                project_description: Clinic Application For Terapist
+                project_url: https://play.google.com/store/apps/details?id=com.klinops.personal
                 visibility: true
 
 # Certificates
