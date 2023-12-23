@@ -26,7 +26,7 @@ urls:
 
 author_logo: authors/anhartasman.png
 author: Anhar Tasman
-author_bio: Hi, my name is Anhar Tasman. I built this site using devlopr-jekyll :D
+author_bio: With over 5 years of experience in programming, I have successfully developed mobile and web applications for a variety of clients. In my most recent role as Senior Programmer, I have consistently delivered high-quality work, resulting in a 20% increase in client satisfaction within 6 months. Available for new projects in 2 weeks.
 author_email: "tasmananhar@gmail.com"
 author_location: Indonesia
 author_website_url:
@@ -36,6 +36,7 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 # Experiences
 author_work_experiences:
             - company_name: ATA Corp
+              work_date_range: Jakarta • 08/2016 - 04/2021
               company_logo: work/atacorp.jpeg
               company_url: https://grass.atacorp.co
               designation: Programmer
@@ -45,6 +46,7 @@ author_work_experiences:
 # Education
 author_education_details:
               - college_logo: education/gunadarma.jpg
+                edu_date_range: 09/2012 - 10/2016
                 college_name: Gunadarma Univercity
                 college_url: https://www.gunadarma.ac.id/
                 college_degree: CS Engineer
@@ -88,6 +90,12 @@ author_project_details:
                 project_info: Android
                 project_description: Clinic Application For Terapist
                 project_url: https://play.google.com/store/apps/details?id=com.klinops.personal
+                visibility: true
+              - project_thumbnail: portfolio/sabico/feat_image_sabico.png
+                project_title: SABICO
+                project_info: Android
+                project_description: Bullying Report Application
+                project_url: https://anhartasman.github.io/blog/portfolio-sabico
                 visibility: true
 
 # Certificates
