@@ -31,7 +31,7 @@ then build the image with the following command
 Go to your jekyll folder and run the following command to start the docker container we just created
 
 <figure class="highlight"><pre>
-<code>docker run -it -v "$(pwd)":/data1 -p 9005:9005 ubuntu-jekyll:latest</code>
+<code>docker run --name myblog -it -v "$(pwd)":/data1 -p 80:80 myjekyll</code>
 </pre></figure>
 
 
@@ -52,8 +52,9 @@ First you need to install the necessary dependencies by running the following co
 After that, you can run it locally using this command
 
 <figure class="highlight"><pre>
-<code>bundle exec jekyll serve --host=0.0.0.0 --port=4000</code>
+<code>bundle exec jekyll serve --host=0.0.0.0 --port=80</code>
 </pre></figure>
 
+to open your web, you can go to 0.0.0.0 or localhost in your browser
 
 I hope that helps you guys, have a nice day!
