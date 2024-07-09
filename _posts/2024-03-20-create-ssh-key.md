@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "Create SSH Key"
+title: "Create SSH Key"
 summary: "SSH Tutorial"
 author: anhartasman
-date: '2024-03-20 01:00:23 +0530'
-categories: [ terminal,ssh ]
+date: "2024-03-20 01:00:23 +0530"
+categories: [terminal, ssh]
 thumbnail: /assets/img/posts/cloudencrypt.jpg
 keywords: ssh
 permalink: /blog/create-ssh-key/
 usemathjax: true
-portfolio: true 
+portfolio: true
 ---
 
-SSH key is needed in some secure connections like when you want to upload your codes to a repository or when you want to encrypt a message before send it to an API, here how to make one
+Creating an SSH key is a fundamental step for securely accessing remote servers and services. In this guide, we'll walk you through the simple process of generating an SSH key pair, which ensures secure and password-free authentication for your connections.
 
 <h3>1. Open your terminal</h3>
 
@@ -32,7 +32,6 @@ Because i want to use cobakuncissh as the name so i will type this
 <code>/Users/anhartasman/.ssh/cobakuncissh</code>
 </pre></figure>
 
-
 <h3>3. Enter your password</h3>
 
 You will asked for a password, type it twice, you can leave it blank
@@ -50,6 +49,5 @@ The public key is the key you can share to public, for exampe if you want to reg
 <figure class="highlight"><pre>
 <code>cat /Users/anhartasman/.ssh/cobakuncissh.pub  | pbcopy</code>
 </pre></figure>
-
 
 I hope that helps you guys, have a nice day!

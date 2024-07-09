@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Using Jekyll In Docker Ubuntu"
+title: "Using Jekyll In Docker Ubuntu"
 summary: "Docker Tutorial"
 author: anhartasman
-date: '2023-06-18 13:00:23 +0530'
-categories: [ jekyll,docker,ubuntu ]
+date: "2023-06-18 13:00:23 +0530"
+categories: [jekyll, docker, ubuntu]
 thumbnail: /assets/img/posts/docker_black_logo.png
 keywords: docker,jekyll
 permalink: /blog/using-jekyll-in-docker-ubuntu/
 usemathjax: true
-portfolio: true 
+portfolio: true
 ---
 
 Jekyll is static web generator which can be used to generate blog, company profile and etc. Now im gonna show you how to use it in ubuntu inside docker container
@@ -23,7 +23,7 @@ Make a dockerfile
 then build the image with the following command
 
 <figure class="highlight"><pre>
-<code>docker build --tag ubuntu-jekyll:latest</code>
+<code>docker build -t myjekyll .</code>
 </pre></figure>
 
 <h3>2. Run the container</h3>
@@ -33,7 +33,6 @@ Go to your jekyll folder and run the following command to start the docker conta
 <figure class="highlight"><pre>
 <code>docker run --name myblog -it -v "$(pwd)":/data1 -p 80:80 myjekyll</code>
 </pre></figure>
-
 
 <h3>3. Using Jekyll</h3>
 
