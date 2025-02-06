@@ -9,7 +9,7 @@ thumbnail: /assets/img/posts/flutterlogo.png
 keywords: flutter
 permalink: /blog/implementing-a-pusher-service-skeleton-in-flutter/
 usemathjax: true
-portfolio: true
+portfolio: false
 ---
 
 Pusher is a real-time communication service that allows Flutter applications to receive and send updates instantly. In this article, we will explore a reusable Pusher service skeleton in Flutter that facilitates channel subscriptions, event bindings, and efficient resource management.
