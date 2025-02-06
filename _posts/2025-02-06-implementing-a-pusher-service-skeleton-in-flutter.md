@@ -198,6 +198,10 @@ print('Pusher disconnected and all channels unsubscribed.');
 
 The unsubscribeFromChannel method ensures that channels are unsubscribed only when all references to them are removed. The disconnect method completely cleans up Pusher resources when the service is no longer needed.
 
+### Full Source Code
+
+<script src="https://gist.github.com/anhartasman/41c691d6417c70b96e3799df5cf2a42d.js"></script>
+
 ### Conclusion
 
 This Pusher service skeleton provides a structured way to handle real-time communication in Flutter applications. By implementing a singleton pattern, reference counting, and event binding, it ensures efficient resource utilization while making it easy to manage subscriptions. This approach is ideal for applications that require real-time updates, such as chat applications, notifications, or live collaboration tools.
