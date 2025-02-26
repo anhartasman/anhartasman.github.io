@@ -5,7 +5,7 @@ summary: "Flutter Tutorial"
 author: anhartasman
 date: "2025-02-06 01:00:23 +0700"
 categories: [mobile, flutter]
-thumbnail: /assets/img/posts/flutterlogo.png
+thumbnail: /assets/img/posts/flutterlogo.jpg
 keywords: flutter
 permalink: /blog/implementing-a-pusher-service-skeleton-in-flutter/
 usemathjax: true

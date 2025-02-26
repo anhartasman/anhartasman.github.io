@@ -5,7 +5,7 @@ summary: "Flutter Tutorial"
 author: anhartasman
 date: "2025-02-06 17:00:00 +0700"
 categories: [mobile, flutter]
-thumbnail: /assets/img/posts/flutterlogo.png
+thumbnail: /assets/img/posts/flutterlogo.jpg
 keywords: flutter
 permalink: /blog/how-to-create-and-use-a-bash-script-to-build-and-rename-flutter-apks/
 usemathjax: true
@@ -32,7 +32,6 @@ Here’s the full Bash script:
 
 ### 1. Define Directories and Prefix
 
- 
 <figure class="highlight">
 <pre>
 <code>
@@ -67,7 +66,7 @@ A timestamp in the format yy_MM_dd_hh_mm is generated and appended to the APK fi
 <code>
 
 echo "Deleting previous APKs matching prefix '${APK_PREFIX}'..."
-find "$APK_DIR" -name "${APK_PREFIX}_*.apk" -exec rm -f {} \;
+find "$APK*DIR" -name "${APK_PREFIX}*\*.apk" -exec rm -f {} \;
 
 </code>
 </pre>
@@ -96,11 +95,11 @@ This runs the Flutter build command in release mode, excluding tree-shaking for 
 <code>
 
 if [ -f "${APK_DIR}app-release.apk" ]; then
-  mv "${APK_DIR}app-release.apk" "$FILE_PATH"
-  echo "APK built and saved as $NEW_APK"
+mv "${APK_DIR}app-release.apk" "$FILE_PATH"
+echo "APK built and saved as $NEW_APK"
 else
-  echo "Error: Flutter build did not generate an APK."
-  exit 1
+echo "Error: Flutter build did not generate an APK."
+exit 1
 fi
 
 </code>
@@ -108,8 +107,9 @@ fi
 </figure>
 
 After building, the script checks if the APK exists. If so, it renames it using the timestamp. If not, an error message is displayed.
- 
+
 ## How to Use the Script
+
 ### 1. Create the Script File
 
 Save the script as build_apk.sh in your Flutter project root.
@@ -127,7 +127,6 @@ chmod +x build_apk.sh
 </code>
 </pre>
 </figure>
-
 
 ### 3. Run the Script
 
@@ -148,4 +147,3 @@ Execute the script by running:
 This Bash script streamlines the APK build process by automating renaming and cleanup tasks. It helps keep track of builds efficiently without manual intervention. By following this tutorial, you can enhance your Flutter development workflow with a simple yet powerful automation script.
 
 Happy coding!
-

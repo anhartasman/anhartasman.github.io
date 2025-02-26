@@ -5,7 +5,7 @@ summary: "Flutter Tutorial"
 author: anhartasman
 date: "2025-02-08 07:00:00 +0700"
 categories: [mobile, flutter]
-thumbnail: /assets/img/posts/flutterlogo.png
+thumbnail: /assets/img/posts/flutterlogo.jpg
 keywords: flutter
 permalink: /blog/creating-a-simple-name-faker-in-flutter/
 usemathjax: true
@@ -22,9 +22,9 @@ Create a new Dart file named util_faker.dart inside the lib folder of your Flutt
 
 ### Explanation:
 
-* We define a private list _indonesianNames containing sample Indonesian names.
+- We define a private list \_indonesianNames containing sample Indonesian names.
 
-* The randomName getter selects a random name from the list using the Random class from dart:math.
+- The randomName getter selects a random name from the list using the Random class from dart:math.
 
 ## Step 2: Using UtilFaker in Your Flutter Project
 
@@ -38,22 +38,21 @@ Open your main.dart file and update it with the following code:
 
 ### What This Code Does:
 
-* It displays a randomly generated Indonesian name when the app starts.
+- It displays a randomly generated Indonesian name when the app starts.
 
-* When the button is pressed, a new name is generated and displayed.
-
+- When the button is pressed, a new name is generated and displayed.
 
 ### Where to Use This Faker Class
 
 The UtilFaker class can be used in various scenarios, such as:
 
-* Testing: Generate random names for UI testing without needing a real database.
+- Testing: Generate random names for UI testing without needing a real database.
 
-* Prototyping: Fill in dummy user profiles while designing a UI.
+- Prototyping: Fill in dummy user profiles while designing a UI.
 
-* Game Development: Assign random character names in a game.
+- Game Development: Assign random character names in a game.
 
-* Mock APIs: Simulate API responses with randomly generated names.
+- Mock APIs: Simulate API responses with randomly generated names.
 
 ### Conclusion
 
