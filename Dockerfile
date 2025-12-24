@@ -4,13 +4,13 @@ WORKDIR /srv/jekyll
 
 ADD . /srv/jekyll
 
-RUN gem install bundler && \
+RUN gem install bundler:2.4.22 && \
     rm -rf Gemfile.lock && \
     chmod -R 777 ${PWD} && \
     bundle update && \
     bundle install
-    # jekyll build && \
-    # jekyll serve --livereload --drafts --trace
+# jekyll build && \
+# jekyll serve --livereload --drafts --trace
 
 ARG build_command
 ENV BUILD_COMMAND ${build_command}
