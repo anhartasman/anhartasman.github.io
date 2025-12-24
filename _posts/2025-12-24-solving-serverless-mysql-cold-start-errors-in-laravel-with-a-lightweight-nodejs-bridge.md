@@ -399,7 +399,73 @@ This never blocks requests.
 - No cron jobs
 - No always-on infra
 
-**Closing Thoughts**
+## Docker Users: Add a Small Startup Delay (Important)
+
+If you are running Laravel inside Docker, there is one more critical detail to avoid cold-start failures.
+
+Even with the MySQL waker in place, Laravel can still boot faster than MySQL on container startup. This usually happens when:
+
+- Both services start at the same time
+- Laravel runs migrations or boots the framework immediately
+- MySQL is still initializing and not yet accepting connections
+
+To prevent this, add a short delay in your Laravel container entrypoint.
+
+**Why this is needed**
+
+- Serverless platforms do not guarantee startup order
+- MySQL containers often need a few seconds to become ready
+- Laravel touches the database during boot (migrations, cache, sessions)
+
+**A small delay ensures MySQL is reachable before Laravel begins its lifecycle.**
+
+Example entrypoint.sh
+
+```sh
+#!/bin/sh
+set -e
+
+echo "⏳ Waiting before startup..."
+sleep 5
+
+echo "📁 Ensuring storage directories..."
+mkdir -p storage/framework/cache
+mkdir -p storage/framework/sessions
+mkdir -p storage/framework/views
+mkdir -p storage/logs
+mkdir -p bootstrap/cache
+
+chmod -R 775 storage bootstrap/cache
+
+echo "🧹 Clearing caches..."
+php artisan config:clear
+php artisan route:clear
+
+echo "⚡ Caching config & routes..."
+php artisan config:cache
+php artisan route:cache
+
+echo "🗄️ Running migrations..."
+php artisan migrate --force
+
+echo "🚀 Starting Laravel..."
+exec php artisan serve --host=0.0.0.0 --port=${PORT:-8080}
+
+```
+
+**Key point**
+
+This delay is not a hack — it’s a practical guard against nondeterministic container startup.
+
+**Combined with the Node.js MySQL waker:**
+
+- The startup delay handles cold boots
+- The waker handles idle sleep wake-ups
+- Laravel remains fast and error-free
+
+Together, they cover both failure modes cleanly.
+
+## Closing Thoughts
 
 Serverless databases introduce a timing problem that most frameworks aren’t designed to handle.
 
