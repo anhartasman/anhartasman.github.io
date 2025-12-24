@@ -328,16 +328,6 @@ app.listen(PORT, () => {
 
 ## Laravel Integration
 
-**config/services.php**
-
-```php
-'mysql_wake' => [
-    'enabled' => env('MYSQL_WAKE_ENABLED', false),
-    'url' => env('MYSQL_WAKE_URL'),
-    'key' => env('MYSQL_WAKE_KEY'),
-],
-```
-
 **.env**
 
 ```env
